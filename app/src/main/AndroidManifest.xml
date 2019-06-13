@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.crazynet.taxidegeluser">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".UI.splash.splashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UI.main.MainActivity" />
+        <activity android:name=".UI.splash2.splash2Activity" />
+        <activity
+            android:name=".UI.log_sign.log_or_sign_Activity"
+            android:label="@string/title_activity_log_or_sign_"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".UI.phoneNumber.phoneNumberActivity" />
+        <activity android:name=".UI.verifyNumber.confirmCodeActivity" />
+        <activity android:name=".UI.welcomeRegister.welcomeActivity"></activity>
+    </application>
+
+</manifest>

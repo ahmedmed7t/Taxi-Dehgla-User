@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JAN 10 - 12:30 PM"
+        android:fontFamily="@font/gibsonsemibold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        />
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="10dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cons_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/tabs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/dots"
+                android:layout_marginLeft="15dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/name_to"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp" android:contentDescription="TODO" />
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pickup Location"
+                android:textSize="11dp"
+                android:textColor="#959DAD"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tabs"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="6dp"/>
+
+            <TextView
+                android:id="@+id/name_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fresh Market"
+                android:textSize="15dp"
+                android:fontFamily="@font/gibsonsemibold"
+                android:textColor="#454F63"
+                app:layout_constraintTop_toBottomOf="@id/from"
+                app:layout_constraintStart_toEndOf="@id/tabs"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="6dp"/>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:background="#F4F4F6"
+                android:layout_marginLeft="15dp"
+                app:layout_constraintTop_toBottomOf="@id/name_from"
+                app:layout_constraintStart_toEndOf="@id/tabs"
+                android:layout_marginTop="10dp"
+                ></View>
+
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Destination Location"
+                android:textSize="11dp"
+                android:textColor="#959DAD"
+                app:layout_constraintTop_toBottomOf="@id/view"
+                app:layout_constraintStart_toEndOf="@id/tabs"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="6dp"/>
+
+            <TextView
+                android:id="@+id/name_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gibsonsemibold"
+                android:text="My Home"
+                android:textColor="#454F63"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@id/tabs"
+                app:layout_constraintTop_toBottomOf="@id/to"
+                app:layout_constraintBottom_toTopOf="@id/cons_extra"
+                app:layout_constraintVertical_bias="7"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="8dp"
+                />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/cons_extra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/name_to"
+                android:layout_marginTop="12dp"
+                android:background="#2A2A2A"
+                android:paddingBottom="6dp"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/trip_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trip No : "
+                    android:textColor="#EDEDED"
+                    android:textSize="11sp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/gibsonregular"
+                    android:layout_marginLeft="15dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/name_trip_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XAD1"
+                    android:textColor="#EDEDED"
+                    android:textSize="11sp"
+                    android:paddingTop="2dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/gibsonsemibold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/trip_no"/>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_driver_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/trip_no"
+                    android:layout_marginLeft="20dp"
+                    app:cardCornerRadius="10dp"
+                    android:elevation="4dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/driver_image"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/person"/>
+
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:id="@+id/driver_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alexa"
+                    app:layout_constraintTop_toBottomOf="@id/trip_no"
+                    app:layout_constraintStart_toEndOf="@id/card_driver_image"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/gibsonsemibold"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/driver_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.5 stars"
+                    app:layout_constraintTop_toBottomOf="@id/driver_name"
+                    app:layout_constraintStart_toEndOf="@id/card_driver_image"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/gibsonregular"
+                    android:textSize="11sp"/>
+
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$48.90"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/gibsonsemibold"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@id/view2"
+                    android:layout_marginRight="45dp"
+                    app:layout_constraintVertical_bias=".8"/>
+
+                <ImageView
+                    android:id="@+id/stars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/stars"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/price"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="240dp"
+                    android:layout_height="1dp"
+                    android:background="@color/white"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintTop_toBottomOf="@id/card_driver_image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias=".4"></View>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_car_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/view2"
+                    android:layout_marginLeft="20dp"
+                    app:cardCornerRadius="10dp"
+                    android:elevation="4dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/car_image"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/car"/>
+
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:id="@+id/car_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Audi S7"
+                    app:layout_constraintTop_toBottomOf="@id/view2"
+                    app:layout_constraintStart_toEndOf="@id/card_driver_image"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/gibsonsemibold"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/car_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brown"
+                    app:layout_constraintTop_toBottomOf="@id/car_model"
+                    app:layout_constraintStart_toEndOf="@id/card_driver_image"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/gibsonregular"
+                    android:textSize="11sp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="complaint"
+                    android:fontFamily="@font/gibsonsemibold"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:background="@drawable/goldbutton"
+                    app:layout_constraintTop_toBottomOf="@id/view2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_margin="10dp"/>
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

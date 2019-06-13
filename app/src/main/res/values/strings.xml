@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Taxi Degel User</string>
+    <string name="welcomeSplash">Welcome to Taxi Degla</string>
+    <string name="underSplash">The best way to navigate your world and discover new places. let\'s get started! </string>
+    <string name="cont">COTINUE WITH :</string>
+    <string name="login">login</string>
+    <string name="signup">sign up</string>
+    <string name="title_activity_log_or_sign">logOrSignActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="forgetPass">FORGOT PASSWORD</string>
+    <string name="contin">CONTINUE</string>
+    <string name="usePhone">USE PHONE NUMBER</string>
+    <string name="enterPhone">Enter your Phone Number:</string>
+    <string name="nextStep">Next Step</string>
+    <string name="next">Next</string>
+    <string name="confirmCode">Enter your Confirmation Number:</string>
+    <string name="apply">APPLY</string>
+    <string name="welcome">WELCOME</string>
+    <string name="thankyou">Thank you for registering with Taxi Degla</string>
+    <string name="profile">profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_log_or_sign_">log_or_sign_Activity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+
+
+</resources>

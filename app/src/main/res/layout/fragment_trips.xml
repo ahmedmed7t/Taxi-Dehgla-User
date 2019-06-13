@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.crazynet.taxidegeluser.UI.tripsFragment">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@mipmap/blackback"
+        android:layout_margin="20dp"
+        />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="Trips"
+        android:textColor="#454F63"
+        android:textSize="37dp"
+        android:fontFamily="@font/gibsonsemibold"
+        android:layout_marginLeft="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        android:background="#F7F7FA">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Previews trips"
+            android:textColor="#78849E"
+            android:textSize="14sp"
+            android:fontFamily="@font/gibsonregular"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerTrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_marginLeft="20dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</LinearLayout>
